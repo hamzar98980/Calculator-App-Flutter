@@ -68,6 +68,7 @@ class _calculatorState extends State<calculator> {
               Expanded(
                   child: Container(
                 padding: EdgeInsets.all(10),
+                // color: Colors.white,
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   userans,
@@ -76,6 +77,7 @@ class _calculatorState extends State<calculator> {
               )),
               Container(
                 padding: EdgeInsets.all(20),
+                // color: Colors.white,
                 alignment: Alignment.bottomRight,
                 child: Text(
                   userques,
@@ -106,9 +108,10 @@ class _calculatorState extends State<calculator> {
                             buttontxt: buttons[index],
                             Color: colorequal(buttons[index])
                                 ? Color.fromARGB(255, 55, 151, 58)
-                                : Color.fromARGB(255, 100, 97, 97),
+                                // : Color.fromRGBO(108, 108, 109, 100)
+                                : Color.fromRGBO(240, 240, 240, 100),
                             txtcolor: isopertae(buttons[index])
-                                ? Color.fromARGB(255, 255, 0, 0)
+                                ? Color.fromARGB(255, 0, 0, 0)
                                 : Colors.white,
                           );
                         } else if (index == 1) {
@@ -122,8 +125,8 @@ class _calculatorState extends State<calculator> {
                             buttontxt: buttons[index],
                             Color: colorequal(buttons[index])
                                 ? Color.fromARGB(255, 55, 151, 58)
-                                : Color.fromARGB(255, 100, 97, 97),
-                            txtcolor: Color.fromARGB(255, 255, 0, 0),
+                                : Color.fromRGBO(240, 240, 240, 100),
+                            txtcolor: Color.fromARGB(255, 0, 0, 0),
                           );
                         } else if (index == buttons.length - 1) {
                           return Mybutton(
@@ -150,7 +153,7 @@ class _calculatorState extends State<calculator> {
                             buttontxt: buttons[index],
                             Color: colorequal(buttons[index])
                                 ? Color.fromARGB(255, 55, 151, 58)
-                                : Color.fromARGB(255, 100, 97, 97),
+                                : Color.fromRGBO(108, 108, 109, 100),
                             txtcolor: isopertae(buttons[index])
                                 ? Color.fromARGB(255, 55, 151, 58)
                                 : Colors.white,
